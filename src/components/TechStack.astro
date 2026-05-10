@@ -15,20 +15,20 @@ const technologies = [
 ];
 ---
 
-<section id="tech-stack" class="bg-gray-900 px-6 py-16 sm:py-20">
+<section id="tech-stack" class="px-6 py-16 sm:py-20">
   <div class="mx-auto max-w-7xl">
     <div class="max-w-2xl">
-      <h2 class="text-4xl font-semibold tracking-tight text-white">Tecnologías</h2>
-      <p class="mt-4 text-lg text-gray-400">
-        Herramientas y tecnologías con las que trabajo en proyectos backend y desarrollo web.
+      <h2 class="text-4xl font-semibold tracking-tight text-primary">Technologies</h2>
+      <p class="mt-4 text-lg text-text-muted">
+        Tools and technologies I use for backend and web development projects.
       </p>
     </div>
 
     <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
       {technologies.map((technology) => (
-        <div class="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
+        <div class="green-card-hover flex flex-col items-center gap-4 rounded-2xl border border-border-subtle/60 bg-surface/80 p-6">
           <img src={technology.logo} alt={`Logo de ${technology.name}`} class="h-12 w-12 object-contain" loading="lazy" />
-          <span class="text-center text-sm font-medium text-gray-200">{technology.name}</span>
+          <span class="text-center text-sm font-medium text-text-soft text-glow-hover">{technology.name}</span>
         </div>
       ))}
     </div>

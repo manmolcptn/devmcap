@@ -1,35 +1,30 @@
 ---
 import FastAPI from '../assets/FastAPI.png'
 ---
-<div id="about" class="relative isolate overflow-hidden bg-gray-900 px-6 py-16 sm:py-20 lg:overflow-visible lg:px-0">
+<div id="about" class="relative isolate overflow-hidden px-6 py-16 sm:py-20 lg:overflow-visible lg:px-0">
   <div class="absolute inset-0 -z-10 overflow-hidden">
-    <svg aria-hidden="true" class="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800">
+    <svg aria-hidden="true" class="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-border-subtle/50">
       <defs>
         <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
           <path d="M100 200V.5M.5 .5H200" fill="none" />
         </pattern>
       </defs>
-      <svg x="50%" y="-1" class="overflow-visible fill-gray-800/50">
-        <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
-      </svg>
-      <rect width="100%" height="100%" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" stroke-width="0" />
     </svg>
   </div>
   <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
       <div class="lg:pr-4">
         <div class="lg:max-w-lg">
-          <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Sobre mí</h1>
-          <p class="mt-6 text-xl/8 text-gray-300">
-            Soy Junior Developer enfocado en backend con Python. Trabajo creando APIs con FastAPI y Flask,
-            además de pequeños procesos de automatización y extracción de datos. Escribo código claro,
-            entendible y orientado a resolver problemas reales.
+          <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-primary sm:text-5xl">About me</h1>
+          <p class="mt-6 text-xl/8 text-text-soft">
+            I'm a Junior Developer focused on backend development with Python. I build APIs with FastAPI and Flask,
+            as well as small automation and data extraction processes. I write clear, understandable code focused on solving real problems.
           </p>
         </div>
       </div>
     </div>
-    <div class="-mt-8 -ml-8 p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img src={FastAPI.src} alt="Captura de una API simple desarrollada con FastAPI" class="w-3xl max-w-none rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10 sm:w-228" />
+    <div class="w-full p-0 sm:p-8 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+      <img src={FastAPI.src} alt="Screenshot of a simple API built with FastAPI" class="w-full max-w-full rounded-xl bg-surface object-cover shadow-[0_0_36px_rgba(34,197,94,0.16)] ring-1 ring-border-subtle/70" />
     </div>
   </div>
 </div>

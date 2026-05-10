@@ -10,10 +10,21 @@ import Contact from '../components/Contact.astro';
 ---
 
 <Layout>
-	<Header/>
-	<Hero/>
-	<About/>
-	<Projects/>
-	<TechStack/>
-	<Contact/>
+	<section class="interactive-background">
+		<Header/>
+		<Hero/>
+		<About/>
+		<Projects/>
+		<TechStack/>
+		<Contact/>
+	</section>
+	<script>
+		const background = document.querySelector<HTMLElement>(".interactive-background");
+		background?.addEventListener("pointermove", (event) => {
+			const rect = background.getBoundingClientRect();
+
+			background.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+			background.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+		});
+	</script>
 </Layout>
