@@ -1,0 +1,36 @@
+---
+const technologies = [
+  { name: 'Python', logo: 'https://cdn.simpleicons.org/python' },
+  { name: 'FastAPI', logo: 'https://cdn.simpleicons.org/fastapi' },
+  { name: 'Flask', logo: 'https://cdn.simpleicons.org/flask/ffffff' },
+  { name: 'Git', logo: 'https://cdn.simpleicons.org/git' },
+  { name: 'GitHub', logo: 'https://cdn.simpleicons.org/github/ffffff' },
+  { name: 'Linux', logo: 'https://cdn.simpleicons.org/linux' },
+  { name: 'HTML', logo: 'https://cdn.simpleicons.org/html5' },
+  { name: 'CSS', logo: 'https://cdn.simpleicons.org/css' },
+  { name: 'JavaScript', logo: 'https://cdn.simpleicons.org/javascript' },
+  { name: 'Astro', logo: 'https://cdn.simpleicons.org/astro/ffffff' },
+  { name: 'Tailwind CSS', logo: 'https://cdn.simpleicons.org/tailwindcss' },
+	{ name: 'Claude', logo: 'https://cdn.simpleicons.org/claude'},
+];
+---
+
+<section id="tech-stack" class="bg-gray-900 px-6 py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl">
+    <div class="max-w-2xl">
+      <h2 class="text-4xl font-semibold tracking-tight text-white">Tecnologías</h2>
+      <p class="mt-4 text-lg text-gray-400">
+        Herramientas y tecnologías con las que trabajo en proyectos backend y desarrollo web.
+      </p>
+    </div>
+
+    <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      {technologies.map((technology) => (
+        <div class="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10">
+          <img src={technology.logo} alt={`Logo de ${technology.name}`} class="h-12 w-12 object-contain" loading="lazy" />
+          <span class="text-center text-sm font-medium text-gray-200">{technology.name}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
